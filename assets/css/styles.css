@@ -1,72 +1,152 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-    
+
+body {
+    background-color: rgb(204, 204, 204);
+    font-family: 'Courier Prime', monospace;
+    /* 400, 700, 400i, 700i */
+    overflow: hidden;
+
 }
+
 .nav-bar {
-    height: 6rem;
+    height: 4rem;
     width: 100%;
-    position:fixed;
-    font-weight:bolder;
+    font-weight: 400;
     font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:5px;
-    border-bottom: 1px solid black;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a shadow below the footer */
 
 }
 
-.active{
+.active {
     background-color: rgb(229, 255, 0);
     
+
 }
 
 .nav-bar a {
-    font-size: 3rem;
+    font-size: 2rem;
     text-decoration: none;
     color: black;
-    padding:27px;
+    padding: 0.8rem;
 
 }
 
-.nav-bar:hover{
+.nav-bar:hover {
     background-color: blueviolet;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
 .nav-bar ul {
-    list-style:none;
+    list-style: none;
     display: flex;
 }
 
-.nav-bar ul :hover{
+.nav-bar ul :hover {
     color: rgb(165, 163, 163);
     transition: 0.3s;
 
 }
+
 .logo {
     background-color: gold;
-    padding:4px;
+    margin-left: 1rem;
     border-radius: 10px;
 }
 
-/* .logo:hover {
-    background-color: gold;
-    padding:4px;
+
+footer {
+    height: 4.5rem;
+    background-color: blueviolet;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Adds a shadow below the footer */
     border-radius: 10px;
 }
- */
 
-img{
-    height: 20rem;
+.footer-icons {
+    display: flex;
+    gap: 1rem; /* Space between icons */
+    margin-left: 55rem;
+    margin-top:auto;
+    margin-bottom: auto;
+}
+
+.footer-icons a {
+    text-decoration: none;
+}
+
+.footer-icons a:hover{
+    transform: scale(1.5) ;
+    transition: 0.2s;
+}
+
+.copyright { 
+
+    margin-left: auto; /* Pushe the copyright to the right */
+    padding-right: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.copyright a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.copyright:hover {
+    transform: scale(1.1) ;
+    transition: 0.2s;
 }
 
 
 
 
+/* index page */
+.index-container {
+    width: 100%;
+    height: 83vh;
+    margin-top: 2rem;
+    display: flex;
+}
+
+.photo-box {
+    max-width: 25vw;
+    /* 25% of the viewport width */
+
+    margin: 10rem 1rem 10rem 10rem;
+
+}
+
+.photo-box img {
+    width: 100%;
+    /* Makes the image scale to fit the width of box1 */
+    height: 100%;
+    /* Optional: If you want the image to cover the full height */
+    border-radius: 50%;
+    object-fit: cover;
+    /* Keeps the aspect ratio while filling the box */
+}
+
+.content-box {
+    margin-left: 5rem;
+    margin-top: 15rem;
+
+}
+
+.content-box span {
+    font-size: 4rem;
+    color: rgba(0, 0, 255, 0.8) /*semi-transparent*/
+}
+
+.content-box p {
+    font-size: 2rem;
+}
